@@ -1612,7 +1612,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 30px;
   }
 
-  .filter-item button {
+  .-item button {
     color: var(--light-gray);
     font-size: var(--fs-5);
     transition: var(--transition-1);
