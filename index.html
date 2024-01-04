@@ -547,20 +547,38 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="personal projects">
+            <li class="project-item active" data-filter-item data-category="personal projects">
               <a href="#">
+                  <figure class="project-img">
+                      <div class="project-item-icon-box">
+                          <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#myModal1">
+                              <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
+                          </button>
+                      </div>
+                      <img src="./assets/images/project-1.jpg" alt="personal" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Finance</h3>
+                  <p class="project-category">Web development</p>
+              </a>
+          </li>
+          
+          
+          
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+            <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Add your modal content here -->
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fab</h3>
-
-                <p class="project-category">Personal projects</p>
+                  <div class="modal-body">
+                    <!-- Your modal content goes here -->
+                  </div>
+                </div>
+              </div>
+            </div>
 
               </a>
             </li>
