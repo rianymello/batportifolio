@@ -14,7 +14,7 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
-
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css');
 :root {
 
   /**
@@ -1879,5 +1879,21 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom:hover {
+    outline: none;
+    box-shadow: none;
+}
+
+
+.eye-icon {
+  color: #000; /* Set the initial color of the eye icon */
+  transition: color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.btn-custom:hover .eye-icon {
+  color: yellow; /* Set the color you want on hover */
 }
 
