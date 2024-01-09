@@ -157,3 +157,42 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+// seta de navegação do modal, favor não mexer, sujeito a paulada
+
+$(document).ready(function () {
+  var modals = $('[id^=myModal]');
+  var currentModalIndex = 0;
+
+  function showModal(index) {
+    $(modals).modal('hide');
+    $(modals[index]).modal('show');
+  }
+
+  function handleNext() {
+    currentModalIndex = (currentModalIndex + 1) % modals.length;
+    showModal(currentModalIndex);
+    updateButtonVisibility();
+  }
+ // pq krls o de cima functiona e esse n?????
+  function handlePrevious() {
+    currentModalIndex = (currentModalIndex - 1 + modals.length) % modals.length;
+    showModal(currentModalIndex);
+    updateButtonVisibility();
+  }
+// ah, errei matemática básica UWU
+  function updateButtonVisibility() {
+    $('#prevModalBtn').toggle(currentModalIndex > 0);
+    $('#nextModalBtn').toggle(currentModalIndex < modals.length - 1);
+  }
+
+  $(document).on('click', '#nextModalBtn', handleNext);
+  $(document).on('click', '#prevModalBtn', handlePrevious);
+
+  $(modals).on('show.bs.modal', function (e) {
+    var modalIndex = modals.index(e.target);
+    currentModalIndex = modalIndex;
+    updateButtonVisibility();
+  });
+// N sei pq tá funcionando, mas tá funcionando
+  $('#prevModalBtn').hide();
+});
