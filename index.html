@@ -16,6 +16,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Salsa">
 
   <!--
     - google font link
@@ -61,11 +62,11 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.jpg" alt="Richard hanrick" width="80">
+          <img src="./assets/images/my-avatar.jpg" alt="Pedro Henrique" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Pedro Henrique</h1>
+          <h1 class="name" title="Pedro Henrique">Pedro Henrique</h1>
 
           <p class="title"><span class="waveTextAnimated">
               <span class="word">
@@ -100,9 +101,12 @@
 
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
-              <a href="#" class="contact-link">tgpsi22pedroelias@etap.pt</a>
+              <a href="javascript:void(0);" class="contact-link" id="emailLink">tgpsi22pedroelias@etap.pt</a>
             </div>
+            <div id="copiedMessage" class="hidden">Copied!</div>
+            
+            
+            
 
           </li>
 
@@ -115,8 +119,9 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+351 937 293 089</a>
+              <a href="tel:+12133522795" class="contact-link" id="phonenumber">+351 937 293 089</a>
             </div>
+            <div id="copiedMessage" class="hidden">Copied!</div>
 
           </li>
 
@@ -681,7 +686,7 @@
                   <img src="./assets/images/port3.png" alt="fundo" loading="lazy">
                 </figure>
                 <h3 class="project-title">Linux VM</h3>
-                <p class="project-category">School projects</p>
+                <p class="project-category">School Projects</p>
               </a>
             </li>
 
@@ -726,7 +731,7 @@
                   <img src="./assets/images/port4.png" alt="brawlhalla" loading="lazy">
                 </figure>
                 <h3 class="project-title">Website</h3>
-                <p class="project-category">School projects</p>
+                <p class="project-category">School Projects</p>
               </a>
             </li>
 
@@ -760,18 +765,18 @@
               </div>
             </div>
 
-            <li class="project-item active" data-filter-item data-category="school projects">
+            <li class="project-item active" data-filter-item data-category="personal projects">
               <a href="javascript:void(0);">
-                <figure class="project-img">
+                <figure class="project-img" style="width: 259.467px; height: 194.6px;">
                   <div class="project-item-icon-box">
                     <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#myModal5">
                       <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
                     </button>
                   </div>
-                  <img src="./assets/images/project-5.png" alt="dsm" loading="lazy">
+                  <img src="./assets/images/p4.png" alt="dsm" loading="lazy">
                 </figure>
-                <h3 class="project-title">Site</h3>
-                <p class="project-category">School projects</p>
+                <h3 class="project-title">School Representatives Site</h3>
+                <p class="project-category">Personal Projects</p>
               </a>
             </li>
 
@@ -783,11 +788,14 @@
                 <div class="modal-content">
                   <!-- Add your modal content here -->
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">C - Representatives</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <!-- Your modal content goes here -->
+                    <img src="./assets/images/p4.png" alt="website" loading="lazy" width="470px" height="300px"
+                      >
+                    <p>I worked together as a team with some people to build a website for a national competition.<br> The purpose was to showcase the ideias of our representatives and a way to contact them.</p>
                   </div>
                   <div class="modal-footer" style="padding-top: 20px;">
                     <!-- Previous button on bottom left -->
@@ -803,33 +811,36 @@
 
             <li class="project-item active" data-filter-item data-category="school projects">
               <a href="javascript:void(0);">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
+                <figure class="project-img" style="width: 259.467px; height: 194.6px;">
+                  <div class="project-item-icon-box" >
                     <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#myModal6">
                       <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
                     </button>
                   </div>
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                  <img src="./assets/images/pc.png" alt="dsm" loading="lazy">
                 </figure>
-                <h3 class="project-title">MetaSpark</h3>
-                <p class="project-category">School projects</p>
+                <h3 class="project-title">Hardware and Software maintenence</h3>
+                <p class="project-category">School Projects</p>
               </a>
             </li>
 
 
 
 
-            <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-              aria-hidden="true">
+            <div class="modal fade" id="myModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <!-- Add your modal content here -->
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Hardware/Software</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <!-- Your modal content goes here -->
+                    <img src="./assets/images/pc.png" alt="website" loading="lazy" width="470px" height="300px"
+                      >
+                    <p>As mentioned before I can install GNU/Linux in a VM, but also in bare metal components, also can handle the installation of the windows operating system.<br>
+                      I can also build a pc, and handle the components, cleaning and maintenence.</p>
                   </div>
                   <div class="modal-footer" style="padding-top: 20px;">
                     <!-- Previous button on bottom left -->
@@ -843,7 +854,7 @@
               </div>
             </div>
 
-            <li class="project-item active" data-filter-item data-category="school projects">
+            <li class="project-item active" data-filter-item data-category="school projects" style="display: none;">
               <a href="javascript:void(0);">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -862,7 +873,7 @@
 
 
             <div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-              aria-hidden="true">
+              aria-hidden="true" style="display: none;">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <!-- Add your modal content here -->
@@ -885,7 +896,7 @@
               </div>
             </div>
 
-            <li class="project-item active" data-filter-item data-category="school projects">
+            <li class="project-item active" data-filter-item data-category="school projects" style="display: none;">
               <a href="javascript:void(0);">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -904,7 +915,7 @@
 
 
             <div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-              aria-hidden="true">
+              aria-hidden="true" style="display: none;">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <!-- Add your modal content here -->
@@ -927,7 +938,7 @@
               </div>
             </div>
 
-            <li class="project-item active" data-filter-item data-category="school projects">
+            <li class="project-item active" data-filter-item data-category="school projects" style="display: none;">
               <a href="javascript:void(0);">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -946,7 +957,7 @@
 
 
             <div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-              aria-hidden="true">
+              aria-hidden="true" style="display: none;">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <!-- Add your modal content here -->

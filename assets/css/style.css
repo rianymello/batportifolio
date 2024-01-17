@@ -16,6 +16,7 @@
 \*-----------------------------------*/
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css');
 
+
 :root {
 
   /**
@@ -575,7 +576,6 @@ main {
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
-  z-index: 1;
 }
 
 .service-item::before {
@@ -2127,8 +2127,14 @@ textarea.form-input::-webkit-resizer {
   .info-content .name {
     white-space: nowrap;
     text-align: center;
+    font-family: 'Salsa', sans-serif;
+    transition: font-size 0.3s ease; /* Add transition property for smooth animation */
   }
-
+  
+  .info-content .name:hover {
+    font-size: 30px;
+  }
+  
   .info-content .title {
     margin: auto;
   }
@@ -2208,6 +2214,7 @@ textarea.form-input::-webkit-resizer {
 .word span {
   display: inline-block;
   animation: wave-text 2s ease-in-out infinite;
+  font-family: 'Salsa', sans-serif;
 }
 
 .word span:nth-child(1) {
@@ -2308,4 +2315,17 @@ textarea.form-input::-webkit-resizer {
   right: 10px;
   background-color: var(--orange-yellow-crayola);
 }
+
+#copiedMessage {
+  position: fixed;
+  background-color: var(--orange-yellow-crayola);
+  font-family: 'Salsa', sans-serif;
+  color: #000000;
+  padding: 8px;
+  border-radius: 4px;
+  z-index: 999999;
+  display: none;
+}
+
+
 

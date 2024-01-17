@@ -196,3 +196,51 @@ $(document).ready(function () {
 // N sei pq tá funcionando, mas tá funcionando
   $('#prevModalBtn').hide();
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  var emailLink = document.getElementById('emailLink');
+  var phoneNumberLink = document.getElementById('phonenumber');
+  var copiedMessage = document.getElementById('copiedMessage');
+
+  emailLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    copyToClipboard(emailLink.textContent);
+    showCopiedMessage(event);
+  });
+
+  phoneNumberLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    copyToClipboard(phoneNumberLink.textContent);
+    showCopiedMessage(event);
+  });
+
+  function copyToClipboard(text) {
+    var textarea = document.createElement('textarea');
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+  }
+
+  function showCopiedMessage(event) {
+    copiedMessage.style.display = 'block';
+
+    function updateMessagePosition(e) {
+      copiedMessage.style.left = e.clientX + 'px';
+      copiedMessage.style.top = e.clientY - 30 + 'px';
+    }
+
+    updateMessagePosition(event);
+
+    document.addEventListener('mousemove', updateMessagePosition);
+
+    setTimeout(function () {
+      copiedMessage.style.display = 'none';
+      document.removeEventListener('mousemove', updateMessagePosition);
+    }, 1500); // Adjust the time the message stays visible (in milliseconds)
+  }
+});
+
+
+
